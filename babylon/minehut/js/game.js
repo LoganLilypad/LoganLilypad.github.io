@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function(){
         var scene = new BABYLON.Scene(engine);
         
         scene.clearColor = new BABYLON.Color3(.3,.3,.8);
-        var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(-37, 56, -5), scene);
+        var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(-37, 58, -10), scene);
         camera.setTarget(BABYLON.Vector3.Zero());
         camera.attachControl(canvas,true);
 
@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', function(){
 
         BABYLON.SceneLoader.ImportMesh("", "./models/lobby/", "lobby.babylon", scene, function (mesh) {
             mesh[0].name = "test";
-            mesh[0].material.emissiveColor = new BABYLON.Color3(1, 1, 1);
             mesh[0].material.specularColor = new BABYLON.Color3(0, 0, 0);
             mesh[0].material.ambientColor = new BABYLON.Color3(1, 1, 1);
             mesh[0].material.diffuseTexture.hasAlpha = true;
