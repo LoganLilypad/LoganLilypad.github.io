@@ -1,7 +1,7 @@
 if ('WebSocket' in window) {
     function conn() {
     
-    var ws = new WebSocket('ws://167.172.158.214:8080');
+    var ws = new WebSocket('wss://167.172.158.214:8080');
      
     ws.onopen = function() {
 
