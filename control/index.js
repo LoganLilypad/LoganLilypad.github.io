@@ -5,7 +5,7 @@ if ('WebSocket' in window) {
 
     function conn() {
 
-        ws = new WebSocket('wss://flicket.org:443');
+        ws = new WebSocket('ws://flicket.org:443');
 
         ws.onopen = () => {
 
