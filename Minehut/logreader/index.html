@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="./index.js"></script>
+        <style>
+            body {
+                background-color: rgb(36, 36, 36);
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            table {
+                display: block;
+                float: left;
+                width: 25vw;
+                height: 25vh;
+            }
+            div {
+                overflow: auto;
+                width: 50vw;
+            }
+            .ul {
+                width: 50vw;
+                height: 22.5vh;
+            }
+        </style>
+    </head>
+    <body onload="init()">
+        <input id="fileInput" class="ul" type="file" name="file" />
+        <pre id="fileContent"></pre>
+        <h1>Warnings</h1>
+        <div class="warn">
+            <table id="warn" class="warn">
+            </table>
+        </div>
+        <h1>Errors</h1>
+        <div class="err">
+            <table id="err" class="err">
+            </table>
+        </div>
+        <h1>Things noticed</h1>
+        <div class="notice">
+            <table id="notice" class="notice">
+            </table>
+        </div>
+        test
+    </body>
+</html>
